@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .fret{background-color: bisque;height: 1rem; width: 2rem;border-right: 2px solid gray;}
+        .fret:first-child{border-left: solid #9a9a9a 1rem;}
+        .string{display: flex;}
+
+    </style>
+</head>
+<body>
+    <div class="application">
+        <div class="neck">
+            <div class="string first">
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+                <div class="fret"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const notes = [ 'A' , 'A#' , 'B' , 'C' , 'C#' , 'D' , 'D#' , 'E' , 'F' , 'F#' , 'G' , 'G#'];
+        let frets = document.querySelectorAll('.fret');
+        let outputNotes = frets.length;
+        console.log(outputNotes);
+
+        frets.forEach(addNotes);
+
+        function addNotes(notes){
+            let i = 0;
+            if( i < outputNotes){
+                console.log(notes[i]);
+            }
+        }
+    </script>
+</body>
+</html>
