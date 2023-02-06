@@ -29,23 +29,21 @@
                 <div class="fret"></div>
                 <div class="fret"></div>
                 <div class="fret"></div>
+                <div class="fret"></div>
             </div>
         </div>
     </div>
     <script>
         const notes = [ 'A' , 'A#' , 'B' , 'C' , 'C#' , 'D' , 'D#' , 'E' , 'F' , 'F#' , 'G' , 'G#'];
         let frets = document.querySelectorAll('.fret');
+        console.log(frets[1]);
         let outputNotes = frets.length;
         console.log(outputNotes);
 
-        frets.forEach(addNotes);
-
-        function addNotes(notes){
-            let i = 0;
-            if( i < outputNotes){
-                console.log(notes[i]);
-            }
+        for (let i = 0; i < outputNotes; i++ % outp) {
+            frets[i].innerText = notes[i];
         }
+
     </script>
 </body>
 </html>

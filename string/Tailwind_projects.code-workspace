@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Tailwind_projects"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sevenotes"
+	}
+}
